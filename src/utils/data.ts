@@ -31,55 +31,47 @@ export const articles: Article[] = [
   `
 },
   {
-    id: "2",
-    title: "Financial Freedom: Investment Strategies for Women",
-    author: "Morgan Chen",
-    imageUrl: "https://images.unsplash.com/photo-1501854140801-50d01698950b",
-    intro: "Take control of your financial future with these investment approaches tailored for women.",
-    category: "Finance",
-    content: `
-      <p>Financial independence isn't just about wealth accumulation—it's about creating options, security, and freedom in your life. For women, who often face unique financial challenges including career gaps and longer lifespans, developing a strong investment strategy is particularly crucial.</p>
-      
-      <h3>Start where you are</h3>
-      <p>Many women delay investing because they think they don't have enough money to begin or enough knowledge to make smart choices. The truth is that starting small is infinitely better than not starting at all. Even $50 a month invested consistently can grow significantly over time thanks to compound interest.</p>
-      
-      <h3>Understand your risk tolerance</h3>
-      <p>Studies show women often make excellent investors because they tend to take a more measured approach to risk. Understanding your personal risk tolerance—how comfortable you are with market fluctuations—is essential for creating a sustainable investment strategy you can stick with through market ups and downs.</p>
-      
-      <h3>Diversification is your friend</h3>
-      <p>Spreading your investments across different asset classes (stocks, bonds, real estate) and sectors helps protect your portfolio from volatility. Consider low-cost index funds or ETFs as a simple way to achieve instant diversification.</p>
-      
-      <h3>Seek community</h3>
-      <p>Finding an investment club or online community of women investors can provide both education and encouragement. Sharing knowledge and experiences helps demystify investing and builds confidence in your decision-making.</p>
-      
-      <p>Remember that financial freedom isn't just about retirement—it's about having choices throughout your life. Whether it's changing careers, starting a business, taking time off for family, or supporting causes you care about, financial independence gives you the power to design your life on your own terms.</p>
-    `
-  },
-  {
-    id: "3",
-    title: "The Art of Self-Discovery Through Solo Travel",
-    author: "Amara Jackson",
-    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-    intro: "Why traveling alone might be the key to finding yourself and embracing your independence.",
-    category: "Travel",
-    content: `
-      <p>There's something transformative about navigating unfamiliar streets, ordering meals in a language you barely speak, and making spontaneous decisions with no one to consult but yourself. Solo travel strips away the comfort of routine and familiar relationships, leaving you with the most authentic version of yourself.</p>
-      
-      <h3>Beyond the comfort zone</h3>
-      <p>When you travel alone, everyday activities become small adventures. Figuring out public transportation, finding a local cafe, or striking up a conversation with a stranger—these moments of navigating uncertainty build confidence that extends far beyond your journey.</p>
-      
-      <h3>The freedom of solitude</h3>
-      <p>Without the need to compromise or consider others' preferences, solo travel offers unparalleled freedom. Want to spend an entire day in one museum? Change plans last minute? Wake up at dawn for a sunrise hike? The only person you need to consult is yourself.</p>
-      
-      <h3>Meeting yourself anew</h3>
-      <p>Removed from the roles and identities that define you at home—professional, daughter, partner, friend—solo travel creates space to rediscover parts of yourself that may have been overshadowed. You might uncover interests, strengths, or perspectives you didn't know you had.</p>
-      
-      <h3>Safety first</h3>
-      <p>Smart preparation enhances both safety and enjoyment. Research destinations, stay connected with loved ones, secure good accommodations, and trust your intuition. Women-only tours or accommodations can also provide community while maintaining independence.</p>
-      
-      <p>Solo travel isn't about escaping your life—it's about returning to it with greater clarity about who you are and what you want. The woman who returns from a solo journey is invariably more confident, more self-reliant, and more in tune with her authentic desires than the one who left.</p>
-    `
-  },
+  "id": "2",
+  "title": "Jérémy Frérot : son fils a reconnu leur rupture dans une chanson, et c’est bouleversant",
+  "author": "Léa Ouzan",
+  "imageUrl": "https://resize.elle.fr/article_webp/var/plain_site/storage/images/people/la-vie-des-people/news/jeremy-frerot-evoque-la-reaction-touchante-de-ses-enfants-apres-sa-rupture-avec-laure-manaudou-4340267/104312548-1-fre-FR/Jeremy-Frerot-evoque-la-reaction-touchante-de-ses-enfants-apres-sa-rupture-avec-Laure-Manaudou.jpg",
+  "intro": "Le chanteur s’est confié sur sa rupture avec Laure Manaudou et la réaction ultra touchante de ses enfants.",
+  "category": "Célébrités",
+  "content": `
+    <p>Sur le plateau de l’émission <em>Quotidien</em> ce jeudi 10 avril, Jérémy Frérot a ouvert son cœur. Le chanteur s’est exprimé avec sincérité sur sa rupture avec Laure Manaudou, survenue en 2024, et surtout sur ce que vivent leurs enfants à travers ce bouleversement.</p>
+
+    <p>Dans une atmosphère calme et bienveillante, il a raconté comment il avait parlé de la séparation à leurs deux garçons, Lou (7 ans) et Sacha (4 ans). Une conversation délicate, mais essentielle, qu’il a même transformée en chanson. Dans son titre <strong>« Adieu »</strong>, Jérémy évoque avec émotion les mots qu’il a choisis pour rassurer ses enfants : « Je leur ai dit que la vie allait changer, mais pas l’amour qu’on a pour eux. »</p>
+
+    <p>Ce message, ses fils l’ont bien compris. Il a confié qu’ils en parlaient régulièrement, et que cela les aidait à avancer ensemble. Une scène en particulier a touché l’artiste : un jour, son fils Lou a entendu la chanson à la radio et a déclaré spontanément : <em>« Ça parle de papa et maman qui sont amis. Et ‘un enfant, deux enfants’, c’est nous ! »</em> Un moment fort, plein de tendresse et de maturité.</p>
+
+    <h3>Un papa présent, même dans la tempête</h3>
+    <p>Depuis la séparation, Jérémy Frérot met tout en œuvre pour préserver l’équilibre familial. « Je suis un papa vachement impliqué », affirme-t-il. Il partage la garde de ses enfants et continue de construire avec Laure Manaudou une relation sereine et unie pour eux.</p>
+
+    <p>Son histoire parle à beaucoup : celle d’un père séparé, mais aimant, qui reste une figure solide pour ses enfants. En terminant son intervention, il a rappelé ce qui compte le plus pour lui : « Papa et maman restent amis et on va rester une équipe. »</p>
+
+    <p>Un témoignage sincère, rare et touchant — et une preuve que même dans les moments difficiles, l’amour parental peut rester intact.</p>
+  `
+},
+ {
+  "id": "4",
+  "title": "Charlotte Le Bon : ses dents critiquées, elle répond avec beaucoup d’humour",
+  "author": "Eden Ayach",
+  "imageUrl": "https://resize-elle.ladmedia.fr/rcrop/320,412/img/var/plain_site/storage/images/beaute/news-beaute/beaute-des-stars/j-ai-quand-meme-des-vilaines-dents-charlotte-le-bon-revient-avec-humour-sur-les-critiques-que-suscite-sa-dentition-4339649/104297224-1-fre-FR/J-ai-quand-meme-des-vilaines-dents-Charlotte-Le-Bon-revient-avec-humour-sur-les-critiques-que-suscite-sa-dentition.jpg",
+  "intro": "Critiquée sur son sourire, Charlotte Le Bon préfère en rire. Et franchement, elle a bien raison.",
+  "category": "Célébrités",
+  "content": `
+    <p>Charlotte Le Bon a choisi la meilleure des armes contre les critiques : l’autodérision. Invitée sur <strong>Konbini</strong> par David Castello-Lopes, l’actrice québécoise, actuellement en promo pour la saison 3 de <em>The White Lotus</em>, a abordé un sujet inattendu (mais très commenté) : ses dents.</p>
+
+    <p>« Sous une publication que j’ai faite de White Lotus, on a commenté mes dents. Parce que j’ai quand même des vilaines dents », raconte-t-elle en souriant. Avant d’ajouter avec ironie : « J’ai des dents très… créatives, on va dire ça comme ça. »</p>
+
+    <h3>« Une dent qui a plus envie de lumière que moi »</h3>
+    <p>Charlotte Le Bon assume aujourd’hui ce complexe avec humour. « Je pense que celle-ci, elle a plus envie de lumière que moi. Quand je suis timide, elle sort toute seule, parce que je fais un petit sourire pincé. C’est ma dent de pirate », plaisante-t-elle.</p>
+
+    <p>Un ton léger, mais un message important derrière : être différent.e, c’est aussi ce qui fait la beauté. Elle rappelle d’ailleurs que même si elle avait des dents parfaites, « on trouverait toujours quelque chose à redire ». Et elle n’est pas la seule concernée : sa partenaire à l’écran, Aimée Lou Wood, a elle aussi reçu des remarques similaires. Leurs sourires loin des standards hollywoodiens font du bien à voir.</p>
+
+    <p>À une époque où tout semble devoir être lisse, symétrique et filtré, Charlotte Le Bon envoie un message rafraîchissant : on peut être belle, talentueuse, et ne pas rentrer dans les cases. Et surtout, on peut en rire.</p>
+  `
+},
   {
     id: "4",
     title: "Sustainable Fashion: Building an Eco-Friendly Wardrobe",
