@@ -52,6 +52,30 @@ export const articles: Article[] = [
     <p>Un témoignage sincère, rare et touchant — et une preuve que même dans les moments difficiles, l’amour parental peut rester intact.</p>
   `
 },
+  {
+  "id": "3",
+  "title": "Yaël Braun-Pivet : son témoignage bouleversant sur le cancer du sein",
+  "author": "Joséphine Tazdaït",
+  "imageUrl": "https://resize.elle.fr/article_webp/var/plain_site/storage/images/societe/news/je-le-sens-je-sais-que-j-ai-un-cancer-yael-braun-pivet-raconte-son-combat-contre-le-cancer-du-sein-4340167/104309813-1-fre-FR/Je-le-sens.-Je-sais-que-j-ai-un-cancer-Yael-Braun-Pivet-raconte-son-combat-contre-le-cancer-du-sein.jpg",
+  "intro": "Dans son autobiographie, la présidente de l’Assemblée nationale revient sur son combat contre la maladie.",
+  "category": "Société",
+  "content": `
+    <p>Ce jeudi 10 avril, Yaël Braun-Pivet publie <strong>« À ma place »</strong>, une autobiographie dans laquelle elle partage pour la première fois son combat contre le cancer du sein, diagnostiqué en 2022. Trois ans après les faits, elle se livre avec sincérité sur cette épreuve intime.</p>
+
+    <p>Dans une interview pour <em>Paris Match</em>, la présidente de l’Assemblée nationale évoque la soirée où tout a basculé : « La gynécologue nous annonce, sans surprise, que les nouvelles ne sont pas bonnes. La biopsie a révélé un cancer du sein, de grade 2. » Ce jour-là, elle annule tout, pleure beaucoup, mais se sent entourée : « Mon fils aîné m’offre un bouquet de fleurs. Toute la famille de mon mari est là. Je bois, je pleure, mais on est vivants et ensemble. »</p>
+
+    <h3>Un pressentiment fort</h3>
+    <p>Quelques jours avant le diagnostic, Yaël Braun-Pivet raconte avoir eu un sentiment profond que quelque chose n’allait pas : « Je le sens, je le vis en moi. Je sais que j’ai un cancer. » Elle en parle à ses proches, sans détour. Une intuition qui s’est malheureusement confirmée.</p>
+
+    <h3>L'opération et le soulagement</h3>
+    <p>Opérée en février 2022, elle revit avec émotion le moment où elle apprend que tout s’est bien passé. « Je suis seule en salle de réveil. J’allume mon téléphone : mon mari écrit aux enfants que le chirurgien a donné de bonnes nouvelles. »</p>
+
+    <p>Son sein est préservé, la tumeur retirée, et l’hormonothérapie débute pour éviter les risques de récidive. Malgré la douleur, elle se sent libérée : « J’ai franchi une première étape. »</p>
+
+    <p>À travers ce témoignage puissant, Yaël Braun-Pivet montre une autre facette d’elle-même : celle d’une femme forte, vulnérable, mais profondément humaine. Et son récit fait écho à toutes celles et ceux qui affrontent la maladie.</p>
+  `
+},
+
  {
   "id": "4",
   "title": "Charlotte Le Bon : ses dents critiquées, elle répond avec beaucoup d’humour",
@@ -72,54 +96,78 @@ export const articles: Article[] = [
     <p>À une époque où tout semble devoir être lisse, symétrique et filtré, Charlotte Le Bon envoie un message rafraîchissant : on peut être belle, talentueuse, et ne pas rentrer dans les cases. Et surtout, on peut en rire.</p>
   `
 },
+
   {
-    id: "4",
-    title: "Sustainable Fashion: Building an Eco-Friendly Wardrobe",
-    author: "Maya Thompson",
-    imageUrl: "https://images.unsplash.com/photo-1551232864-3f0890e580d9",
-    intro: "How to curate a stylish wardrobe while minimizing your environmental impact.",
-    category: "Fashion",
-    content: `
-      <p>Fashion has always been about self-expression and creativity, but today's conscious consumers are looking beyond aesthetics to consider the environmental and ethical implications of their style choices. Building a sustainable wardrobe doesn't mean sacrificing style—it's about making mindful decisions that align with your values.</p>
-      
-      <h3>Quality over quantity</h3>
-      <p>The foundation of sustainable fashion is investing in fewer, better-quality pieces that will last. Look for well-constructed garments made from durable materials that can withstand years of wear. While the initial cost may be higher, the cost-per-wear of quality pieces is often lower than fast fashion alternatives.</p>
-      
-      <h3>Research ethical brands</h3>
-      <p>Seek out brands that prioritize transparency in their supply chains, fair labor practices, and environmentally friendly production methods. Many sustainable brands are sharing their journey and processes, making it easier for consumers to make informed choices.</p>
-      
-      <h3>Embrace secondhand</h3>
-      <p>Thrift stores, vintage shops, and online resale platforms offer unique pieces with minimal environmental impact. Shopping secondhand extends the lifecycle of garments and keeps them out of landfills while often saving you money.</p>
-      
-      <h3>Care consciously</h3>
-      <p>How you care for your clothes significantly impacts their longevity and environmental footprint. Wash clothes less frequently, at lower temperatures, and line-dry when possible. Learn basic mending skills to extend the life of beloved pieces.</p>
-      
-      <p>Remember that building a sustainable wardrobe is a journey, not an overnight transformation. Each mindful choice contributes to a more ethical fashion ecosystem. By valuing quality, versatility, and longevity in your clothing, you create a wardrobe that serves both your personal style and the planet.</p>
-    `
-  },
+  "id": "5",
+  "title": "Lily Collins ne jure que par ces produits de parapharmacie française (et on comprend pourquoi)",
+  "author": "Pauline Jacmart",
+  "imageUrl": "https://resize.elle.fr/square_webp/var/plain_site/storage/images/beaute/news-beaute/beaute-des-stars/lily-collins-ces-produits-francais-a-retrouver-en-pharmacie-dont-elle-ne-se-passe-plus-4336004/104211616-1-fre-FR/Lily-Collins-Ces-produits-francais-a-retrouver-en-pharmacie-dont-elle-ne-se-passe-plus.jpg",
+  "intro": "Cicalfate, Cicaplast, Biafine… Les indispensables de Lily Collins se trouvent à deux rues de chez toi.",
+  "category": "Beauté",
+  "content": `
+    <p>Elle incarne à la perfection une Américaine tombée amoureuse de Paris dans <em>Emily in Paris</em>, mais dans la vraie vie aussi, <strong>Lily Collins</strong> s’est laissée séduire par la beauté à la française. Et sa routine le prouve.</p>
+
+    <p>Interviewée par <em>Vogue</em>, l’actrice a révélé ses indispensables skincare qu’elle rapporte à chaque virée en France. Spoiler : tu peux les shopper en pharmacie ! « Je fais toujours le plein de <strong>Cicalfate+ d'Avène</strong> et de <strong>Cicaplast de La Roche-Posay</strong> : ce sont des baumes réparateurs incroyables pour ma peau sensible », confie-t-elle. Elle ne jure pas non plus sans la <strong>Biafine</strong>, l’indémodable crème SOS pour les coups de soleil ou irritations.</p>
+
+    <h3>La beauté à la française, version Lily</h3>
+    <p>Si elle adore ces produits, c’est aussi parce qu’ils reflètent une vision du soin et de la beauté qu’elle admire : « J’aime leur allure effortless et cette confiance en soi particulièrement séduisante », dit-elle en parlant des Françaises. Et surtout, cette idée que le naturel fait tout le charme.</p>
+
+    <p>Un esprit qu’elle a observé au quotidien sur le tournage de <em>Emily in Paris</em> : « J’ai probablement appris plus au contact des femmes françaises sur le plateau qu’en jouant Emily elle-même. » Résultat : Lily a adopté deux nouveaux réflexes très français. « 1) Le less is more en maquillage. 2) Entretenir sa frange au quotidien. » Et clairement, on valide.</p>
+
+    <p>Alors si toi aussi tu veux glow comme une Parisienne (ou comme Lily Collins), tu sais ce qu’il te reste à glisser dans ton tote bag avant de sortir de la pharma du coin.</p>
+  `
+},
+
   {
-    id: "5",
-    title: "Navigating Modern Relationships in a Digital World",
-    author: "Dr. Sophia Rivera",
-    imageUrl: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624",
-    intro: "Understanding how technology is reshaping love, dating, and connection in today's world.",
-    category: "Relationships",
-    content: `
-      <p>From dating apps to social media profiles, from text messages to video calls, technology has fundamentally altered how we meet, connect with, and maintain relationships with others. This digital revolution brings both unprecedented opportunities and unique challenges to modern love.</p>
-      
-      <h3>The double-edged sword of choice</h3>
-      <p>Dating apps have expanded our potential dating pool exponentially, giving us access to people we might never have encountered otherwise. However, this abundance of choice can create a paradox where having too many options leads to decision paralysis or a constant feeling that someone better might be just one more swipe away.</p>
-      
-      <h3>Digital communication literacy</h3>
-      <p>Text-based communication lacks the nonverbal cues that make up a significant portion of how we communicate in person. Learning to navigate this limitation—understanding tone, timing, and context in digital messages—has become an essential relationship skill. Being explicit about feelings and intentions can help bridge the gap that technology creates.</p>
-      
-      <h3>Setting digital boundaries</h3>
-      <p>Healthy modern relationships require thoughtful boundaries around technology use. This might mean phone-free dinners, agreements about social media sharing, or designated times to disconnect and focus fully on each other. These boundaries should reflect both partners' needs and comfort levels.</p>
-      
-      <h3>Long-distance connection</h3>
-      <p>Technology has transformed how we maintain relationships across distances. Video calls, shared online experiences, and digital intimacy tools allow couples to feel connected even when physically separated. Finding creative ways to share experiences remotely can strengthen bonds despite distance.</p>
-      
-      <p>The core elements of successful relationships remain timeless: trust, communication, respect, and mutual support. Technology simply offers new contexts where these fundamentals must be applied. By approaching digital tools mindfully and remembering that they serve connection rather than replace it, we can build meaningful relationships that thrive both online and off.</p>
-    `
-  }
+  "id": "6",
+  "title": "Mode éthique : comment se créer un dressing stylé et éco-responsable",
+  "author": "Maya Thompson",
+  "imageUrl": "https://images.unsplash.com/photo-1551232864-3f0890e580d9",
+  "intro": "Un look canon sans flinguer la planète ? C’est possible (et même très stylé).",
+  "category": "Mode",
+  "content": `
+    <p>La mode, c’est fait pour s’amuser, s’exprimer, tester des trucs. Mais aujourd’hui, on est de plus en plus nombreuses à vouloir que notre style reflète aussi nos valeurs. Bonne nouvelle : <strong>avoir un dressing éthique</strong>, ce n’est pas renoncer au style. C’est juste apprendre à consommer autrement — plus malin, plus cool.</p>
+
+    <h3>Investir dans moins, mais mieux</h3>
+    <p>La base, c’est d’arrêter d’acheter 10 pièces bof pour le prix d’une belle. Mieux vaut <strong>quelques fringues de qualité</strong> qui durent longtemps que des vêtements jetables. Au final, ça te coûte moins cher, et ton look y gagne clairement en vibe.</p>
+
+    <h3>Choisir des marques clean</h3>
+    <p>Regarde du côté des marques qui jouent la transparence : matières éco, fabrication locale ou équitable, engagement clair. Il y en a de plus en plus, et elles racontent souvent leur histoire sur Insta ou TikTok — parfait pour faire ses choix en conscience.</p>
+
+    <h3>Se mettre au seconde main</h3>
+    <p>Friperies, applis de revente, vintage en ligne : le <strong>seconde main</strong>, c’est LA pépite pour trouver des pièces uniques sans impact dégueu. C’est bon pour la planète, pour ton budget, et pour ton style. Combo gagnant.</p>
+
+    <h3>Prendre soin de ses fringues</h3>
+    <p>Moins de machines, moins chaud, pas de sèche-linge si tu peux… et tu peux même apprendre à recoudre un bouton ou faire un mini raccommodage. Tes fringues dureront bien plus longtemps, et tu te sentiras genre un peu badass.</p>
+
+    <p>Changer ses habitudes, c’est pas un sprint. C’est un chemin. Chaque petit geste compte. Et si tu veux un dressing qui te ressemble et respecte la planète, tu es clairement sur la bonne voie.</p>
+  `
+},
+
+ {
+  "id": "7",
+  "title": "Relations amoureuses à l’ère digitale : comment rester connectés pour de vrai",
+  "author": "Dr. Sophia Rivera",
+  "imageUrl": "https://images.unsplash.com/photo-1577563908411-5077b6dc7624",
+  "intro": "Love, dating & notifs : comprendre comment le numérique change nos façons d’aimer.",
+  "category": "Relations",
+  "content": `
+    <p>Matchs, likes, DM, visios... Aujourd’hui, <strong>nos relations se construisent autant en ligne que dans la vraie vie</strong>. La tech a changé la donne — parfois pour le meilleur, parfois pour le chaos. Alors comment garder des relations saines dans un monde de swipes et de messages vus–non-répondus ?</p>
+
+    <h3>Trop de choix, tue le choix ?</h3>
+    <p>Les applis de rencontre élargissent notre cercle à l’infini, ce qui est génial... en théorie. Mais cette abondance peut aussi créer un sentiment de saturation, voire de zapping permanent. Résultat : difficile de s’investir quand on pense que « peut-être mieux » est à un swipe de là.</p>
+
+    <h3>Apprendre à parler... en messages</h3>
+    <p>En ligne, il manque les regards, les silences, les gestes. Donc il faut apprendre à <strong>lire entre les lignes</strong> : comprendre le ton, éviter les malentendus, clarifier ce qu’on ressent. Dire les choses clairement (même par texto), c’est devenu une vraie skill en amour.</p>
+
+    <h3>Poser des limites saines avec nos écrans</h3>
+    <p>Pas de couple solide sans limites digitales. Ça peut être : dîner sans téléphone, pas de stories sans l’accord de l’autre, ou se réserver des moments 100% présents. <strong>L’important, c’est d’en parler et de trouver un équilibre qui rassure chacun.e</strong>.</p>
+
+    <h3>L’amour à distance 2.0</h3>
+    <p>La tech rend les relations à distance carrément plus vivables : visios, playlists partagées, jeux en ligne, lettres vocales… Ça demande de l’imagination, mais ça renforce le lien, même séparés par des fuseaux horaires.</p>
+
+    <p>En vrai, ce qui fait marcher une relation n’a pas changé : <strong>confiance, écoute, respect, soutien</strong>. Les outils numériques ne remplacent rien, ils s’ajoutent. Et quand on les utilise avec intention, on peut créer des connexions puissantes, en ligne comme IRL.</p>
+  `
+}
+
 ];
