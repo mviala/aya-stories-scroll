@@ -11,29 +11,25 @@ export interface Article {
 
 export const articles: Article[] = [
   {
-    id: "1",
-    title: "Finding Balance: The Modern Woman's Guide to Wellness",
-    author: "Elena Rodriguez",
-    imageUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-    intro: "Discover how to balance career, relationships, and self-care in today's fast-paced world.",
-    category: "Wellness",
-    content: `
-      <p>In a world that never seems to slow down, finding balance has become more crucial than ever. Modern women are juggling career ambitions, relationships, family responsibilities, and personal wellness—often at the expense of their own needs.</p>
-      
-      <p>The key to sustainable balance isn't about perfect time management or productivity hacks—it's about intentionality and presence. When we're fully engaged in whatever we're doing, whether it's focused work, quality time with loved ones, or self-care, we experience a deeper sense of fulfillment.</p>
-      
-      <h3>Start with micro-moments</h3>
-      <p>Balance doesn't require dramatic lifestyle changes. Begin with small, intentional pauses throughout your day: a five-minute meditation, a mindful cup of tea, or a brief walk outside. These micro-moments accumulate to create a more centered life.</p>
-      
-      <h3>Set boundaries with technology</h3>
-      <p>Our devices keep us constantly connected, making it difficult to truly disconnect. Establish technology-free zones or hours in your home, use app blockers during focused work or family time, and resist the urge to check emails first thing in the morning.</p>
-      
-      <h3>Practice the art of saying no</h3>
-      <p>Every "yes" to others is potentially a "no" to yourself. Before committing to new responsibilities or social engagements, ask yourself if they align with your priorities and if you truly have the energy for them.</p>
-      
-      <p>Remember that balance isn't a destination—it's a continuous practice of realignment as life's circumstances change. The goal isn't perfection but presence and intentionality in how you navigate each day.</p>
-    `
-  },
+  "id": "1",
+  "title": "Hailey Bieber fait revivre LA robe la plus sexy des années 90",
+  "author": "Mathilde Muschel",
+  "imageUrl": "https://resize-elle.ladmedia.fr/r/600,600/alias/original/img/var/plain_site/storage/images/media/images/gettyimages-2208682050/104312843-1-fre-FR/GettyImages-2208682050.jpg",
+  "intro": "La robe bandage fait son grand comeback grâce à Hailey Bieber. Et c’est ultra stylé.",
+  "category": "Mode",
+  "content": `
+    <p>On pensait la robe bandage rangée à jamais au fond des dressings 90’s… mais Hailey Bieber vient de la remettre sur le devant de la scène — et c’est une vraie leçon de style.</p>
+
+    <p>Lors des Fashion Trust U.S. Awards 2025 à Los Angeles, la fondatrice de la marque Rhode a troqué son look habituel (mini-robes + vestes oversize) pour une robe ultra-moulante signée Saint Laurent. Résultat : une silhouette 100% 90s, chic et assumée, qui risque bien de relancer la tendance.</p>
+
+    <p>Sa robe ? Un modèle aubergine à col halter, avec un effet drapé qui enroule le corps comme un ruban. Ajoutez à ça des découpes en losange sur les côtés, une jupe semi-transparente et une taille basse : on se croirait en 2007 sur un tapis rouge MTV. Mais attention, Hailey joue la carte du glam discret : pas de bling-bling, juste une mise en beauté soft et quelques bijoux bien choisis.</p>
+
+    <h3>Le grand retour de la robe bandage</h3>
+    <p>La robe bandage, longtemps boudée au profit de coupes plus amples ou déstructurées, revient en force. Kim Kardashian en a porté une blanche ultra sleek il y a peu, Margot Robbie en mode Barbie a ressorti une version noire et blanche, et Kaia Gerber a même recréé le look culte de sa mère Cindy Crawford façon 2025.</p>
+
+    <p>Bref, c’est officiel : la robe bandage est de retour. Et avec Hailey Bieber en ambassadrice, prépare-toi à la revoir partout.</p>
+  `
+},
   {
     id: "2",
     title: "Financial Freedom: Investment Strategies for Women",
