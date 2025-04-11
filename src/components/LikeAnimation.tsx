@@ -10,7 +10,7 @@ const LikeAnimation: React.FC<LikeAnimationProps> = ({ show }) => {
   
   return (
     <div className="like-animation">
-      <div className={`heart ${show ? 'animate' : ''}`}>❤️</div>
+      <div className={`heart ${show ? 'animate' : ''}`}>🤍</div>
     </div>
   );
 };
