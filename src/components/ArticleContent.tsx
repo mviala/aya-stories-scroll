@@ -1,6 +1,7 @@
 
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Article } from '../utils/data';
+import { Bookmark, Heart, Share2 } from 'lucide-react';
 
 interface ArticleContentProps {
   article: Article | null;
@@ -13,12 +14,68 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
   isOpen, 
   onClose 
 }) => {
+  const [bookmarked, setBookmarked] = useState(false);
+  const [liked, setLiked] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!containerRef.current) return;
+      const currentScrollY = containerRef.current.scrollTop;
+      
+      // If scrolling down from the top and past a threshold, close the article
+      if (lastScrollY.current < currentScrollY && currentScrollY > 50) {
+        onClose();
+      }
+      
+      lastScrollY.current = currentScrollY;
+    };
+
+    const container = containerRef.current;
+    if (container) {
+      container.addEventListener('scroll', handleScroll);
+    }
+
+    return () => {
+      if (container) {
+        container.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, [onClose]);
+
+  const handleBookmark = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setBookmarked(!bookmarked);
+  };
+
+  const handleLike = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setLiked(!liked);
+  };
+
+  const handleShare = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (navigator.share && article) {
+      navigator.share({
+        title: article.title,
+        text: article.intro,
+        url: window.location.href,
+      }).catch((error) => console.log('Error sharing', error));
+    } else {
+      console.log('Web Share API not supported');
+    }
+  };
+
   if (!article) return null;
 
   return (
-    <div className={`article-overlay ${isOpen ? 'open' : ''}`}>
+    <div 
+      ref={containerRef}
+      className={`article-overlay ${isOpen ? 'open' : ''}`}
+    >
       <div 
-        className="relative w-full h-64 cursor-pointer"
+        className="relative w-full h-64 cursor-pointer image-container"
         onClick={onClose}
       >
         <img 
@@ -34,6 +91,37 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
             ↩️
           </button>
         </div>
+      </div>
+      
+      <div className="article-action-buttons">
+        <button 
+          className="action-btn"
+          onClick={handleBookmark}
+        >
+          <Bookmark 
+            fill={bookmarked ? "white" : "none"} 
+            color="white" 
+            size={24} 
+          />
+        </button>
+
+        <button 
+          className="action-btn"
+          onClick={handleLike}
+        >
+          <Heart 
+            fill={liked ? "white" : "none"} 
+            color="white" 
+            size={24} 
+          />
+        </button>
+
+        <button 
+          className="action-btn"
+          onClick={handleShare}
+        >
+          <Share2 color="white" size={24} />
+        </button>
       </div>
       
       <div className="p-5 pb-24">
