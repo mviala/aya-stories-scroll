@@ -73,6 +73,7 @@ const FeedCard: React.FC<FeedCardProps> = ({ article, onOpenArticle }) => {
       />
       
       <div className="card-content">
+        <span className="text-sm font-semibold bg-secondary/20 px-2 py-1 rounded mb-2 inline-block">{article.category}</span>
         <h2 className="text-2xl font-bold mb-2">{article.title}</h2>
         <p className="text-base mb-2">{article.intro}</p>
         <p className="text-sm opacity-80">By {article.author}</p>
@@ -95,7 +96,7 @@ const FeedCard: React.FC<FeedCardProps> = ({ article, onOpenArticle }) => {
           onClick={handleLike}
         >
           <Heart 
-            fill={liked ? "white" : "none"} 
+            fill={liked ? "rgba(255, 255, 255, 0.7)" : "none"} 
             color="white" 
             size={24} 
           />
