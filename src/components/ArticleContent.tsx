@@ -58,7 +58,7 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
   };
   if (!article) return null;
   return <div ref={containerRef} className={`article-overlay ${isOpen ? 'open' : ''}`}>
-      <div onClick={onClose} className="relative w-full h-64 cursor-pointer image-container px-0 my-[6px] mx-[6px]">
+      <div className="relative w-full h-64 cursor-pointer image-container" onClick={onClose}>
         <img src={article.imageUrl} alt={article.title} className="w-full h-full object-cover" />
         <div className="absolute top-4 left-4 z-10">
           
