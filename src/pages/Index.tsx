@@ -1,12 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
 
-const Index = () => {
+import React, { useState } from 'react';
+import FeedCard from '../components/FeedCard';
+import ArticleContent from '../components/ArticleContent';
+import { Article, articles } from '../utils/data';
+
+const Index: React.FC = () => {
+  const [currentArticle, setCurrentArticle] = useState<Article | null>(null);
+  const [isArticleOpen, setIsArticleOpen] = useState(false);
+
+  const handleOpenArticle = (article: Article) => {
+    setCurrentArticle(article);
+    setIsArticleOpen(true);
+  };
+
+  const handleCloseArticle = () => {
+    setIsArticleOpen(false);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="relative h-screen w-full">
+      <div className="snap-container">
+        {articles.map((article) => (
+          <FeedCard
+            key={article.id}
+            article={article}
+            onOpenArticle={handleOpenArticle}
+          />
+        ))}
       </div>
+
+      <ArticleContent
+        article={currentArticle}
+        isOpen={isArticleOpen}
+        onClose={handleCloseArticle}
+      />
     </div>
   );
 };
