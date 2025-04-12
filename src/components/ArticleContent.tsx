@@ -40,20 +40,9 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
     }
   };
 
-  const articleOverlayRef = React.useRef<HTMLDivElement>(null);
-
-  React.useEffect(() => {
-    const overlay = articleOverlayRef.current;
-    if (overlay) {
-      overlay.addEventListener('wheel', handleScroll, { passive: false });
-    }
-    return () => {
-      if (overlay) {
-        overlay.removeEventListener('scroll', handleScroll);
-      }
-    }; }, [handleScroll, article, isOpen, onClose]); // Include handleScroll in the dependency array
   if (!article) return null;
-  return article && (
+
+  return (
     <div className={`article-overlay ${isOpen ? 'open' : ''}`}>
       <div className="relative w-full h-64 cursor-pointer image-container" onClick={onClose}>
         <img src={article.imageUrl} alt={article.title} className="w-full h-full object-cover" />

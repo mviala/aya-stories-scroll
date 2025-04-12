@@ -15,7 +15,6 @@ const Index: React.FC = () => {
 
   const handleCloseArticle = () => {
     setIsArticleOpen(false);
-    setCurrentArticle(null);
   };
 
   return (
