@@ -44,12 +44,24 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
 
   const articleOverlayRef = React.useRef<HTMLDivElement>(null);
 
+  const handleScroll = (e: React.UIEvent<HTMLDivElement, UIEvent>) => {
+    const target = e.target as HTMLDivElement;
+    if (target.scrollTop === 0 && e.deltaY > 0) {
+      onClose();
+    }
+  };
+
   React.useEffect(() => {
     const overlay = articleOverlayRef.current;
     if (overlay) {
       overlay.addEventListener('scroll', handleScroll);
     }
-  }, [article, isOpen]);
+    return () => {
+      if (overlay) {
+        overlay.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, [article, isOpen, onClose]);
   return (
     <div className={`article-overlay ${isOpen ? 'open' : ''}`}>
       <div className="relative w-full h-64 cursor-pointer image-container" onClick={onClose}>
