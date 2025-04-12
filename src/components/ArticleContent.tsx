@@ -40,26 +40,7 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
     }
   };
 
-  const articleOverlayRef = React.useRef<HTMLDivElement>(null);\
-
-  // Move handleScroll outside the conditional rendering block
-  // to ensure the useCallback hook is always called.
-  // Also check if article is null inside handleScroll
-
-  const handleScroll = React.useCallback(
-    (e: Event) => {
-      const target = e.target as HTMLDivElement;
-      if (target.scrollTop === 0) {
-        // Check for scroll direction
-        if ((e as any).wheelDeltaY < 0 || (e as WheelEvent).deltaY > 0) {
-          if (article) { // Only close if article is not null
-            onClose();
-          }
-        }
-      }
-    },
-    [onClose]
-    );
+  const articleOverlayRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
     const overlay = articleOverlayRef.current;
