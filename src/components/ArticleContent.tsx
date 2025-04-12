@@ -44,17 +44,23 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
 
   const articleOverlayRef = React.useRef<HTMLDivElement>(null);
 
-  const handleScroll = (e: React.UIEvent<HTMLDivElement, UIEvent>) => {
-    const target = e.target as HTMLDivElement;
-    if (target.scrollTop === 0 && e.deltaY > 1) {
-      onClose();
-    }
-  };
+  const handleScroll = React.useCallback(
+    (e: Event) => {
+      const target = e.target as HTMLDivElement;
+      if (target.scrollTop === 0) {
+        // Check for scroll direction
+        if ((e as any).wheelDeltaY < 0 || (e as WheelEvent).deltaY > 0) {
+          onClose();
+        }
+      }
+    },
+    [onClose]
+  );
 
   React.useEffect(() => {
     const overlay = articleOverlayRef.current;
     if (overlay) {
-      overlay.addEventListener('scroll', handleScroll);
+      overlay.addEventListener('wheel', handleScroll, { passive: false });
     }
     return () => {
       if (overlay) {
