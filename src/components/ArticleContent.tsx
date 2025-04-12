@@ -40,40 +40,43 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
     }
   };
 
-  const articleOverlayRef = React.useRef<HTMLDivElement>(null);
-
-  const handleScroll = React.useCallback(
-    (e: Event) => {
-      const target = e.target as HTMLDivElement;
-      if (target.scrollTop === 0) {
-        // Check for scroll direction
-        if ((e as any).wheelDeltaY > 0 || (e as WheelEvent).deltaY > 0) {
-          if (article) { // Only close if article is not null
-            onClose();
-          }
-        }
-      }
-    },
-    [onClose]
-  );
-
-  React.useEffect(() => {
-    const overlay = articleOverlayRef.current;
-    if (overlay) {
-      overlay.addEventListener('wheel', handleScroll, { passive: false });
-    }
-    return () => {
-      if (overlay) {
-        overlay.removeEventListener('wheel', handleScroll); // Use 'wheel' here
-      }
-    };
-  }, [handleScroll, article, isOpen, onClose]); // Include handleScroll in the dependency array
-
   if (!article) return null;
 
-  return article && (
-    <div className={`article-overlay ${isOpen ? 'open' : ''}`} ref={articleOverlayRef}>
-      {/* Rest of your component's JSX here */}
+  return (
+    <div className={`article-overlay ${isOpen ? 'open' : ''}`}>
+      <div className="relative w-full h-64 cursor-pointer image-container" onClick={onClose}>
+        <img src={article.imageUrl} alt={article.title} className="w-full h-full object-cover" />
+        <div className="absolute top-4 left-4 z-10">
+          
+        </div>
+      </div>
+      
+      <div className="article-action-buttons">
+        <button className="action-btn" onClick={handleBookmark}>
+          <Bookmark fill={bookmarked ? "white" : "none"} color="white" size={24} />
+        </button>
+
+        <button className="action-btn" onClick={handleLike}>
+          <Heart fill={liked ? "rgba(255, 255, 255, 0.7)" : "none"} color="white" size={24} />
+        </button>
+
+        <button className="action-btn" onClick={handleShare}>
+          <Share2 color="white" size={24} />
+        </button>
+      </div>
+      
+      <div className="p-5 pb-24">
+        <span className="text-sm font-semibold text-primary bg-secondary/20 px-2 py-1 rounded mb-2 inline-block">{article.category}</span>
+        <h1 className="text-3xl font-bold mb-3 text-primary">{article.title}</h1>
+        <p className="text-base mb-6 font-semibold">By {article.author}</p>
+        
+        <div className="article-body" dangerouslySetInnerHTML={{
+        __html: article.content
+      }} style={{
+        lineHeight: '1.8',
+        fontSize: '1.1rem'
+      }} />
+      </div>
     </div>
   );
 };
