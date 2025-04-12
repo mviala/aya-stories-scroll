@@ -40,9 +40,11 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
     }
   };
 
-  if (!article) return null;
+  const articleOverlayRef = React.useRef<HTMLDivElement>(null);\
 
-  const articleOverlayRef = React.useRef<HTMLDivElement>(null);
+  // Move handleScroll outside the conditional rendering block
+  // to ensure the useCallback hook is always called.
+  // Also check if article is null inside handleScroll
 
   const handleScroll = React.useCallback(
     (e: Event) => {
@@ -50,12 +52,14 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
       if (target.scrollTop === 0) {
         // Check for scroll direction
         if ((e as any).wheelDeltaY < 0 || (e as WheelEvent).deltaY > 0) {
-          onClose();
+          if (article) { // Only close if article is not null
+            onClose();
+          }
         }
       }
     },
     [onClose]
-  );
+    );
 
   React.useEffect(() => {
     const overlay = articleOverlayRef.current;
@@ -66,8 +70,8 @@ const ArticleContent: React.FC<ArticleContentProps> = ({
       if (overlay) {
         overlay.removeEventListener('scroll', handleScroll);
       }
-    };
-  }, [article, isOpen, onClose]);
+    }; }, [handleScroll, article, isOpen, onClose]); // Include handleScroll in the dependency array
+  if (!article) return null;
   return article && (
     <div className={`article-overlay ${isOpen ? 'open' : ''}`}>
       <div className="relative w-full h-64 cursor-pointer image-container" onClick={onClose}>
